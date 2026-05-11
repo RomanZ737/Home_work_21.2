@@ -10,22 +10,6 @@ requires-python = ">=3.12"
 dependencies = [
 ]
 
-[tool.poetry]
-packages = [{include = "home_work_21"}]
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
-
-[dependency-groups]
-lint = [
-    "black (>=26.3.1,<27.0.0)",
-    "flake8 (>=7.3.0,<8.0.0)",
-    "mypy (>=2.0.0,<3.0.0)",
-    "isort (>=8.0.1,<9.0.0)"
-]
-
-
 [tool.mypy]
 disallow_untyped_defs = true
 no_implicit_optional = true
